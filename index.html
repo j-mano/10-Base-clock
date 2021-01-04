@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="EN-GB">
+
+<html>
+    <head>
+        <title>Clock</title>
+		<!-- Tab icon -->
+		<link rel="icon" href="Bilder/Capture.PNG" type="image/x-icon">
+		
+        <!-- Scripts and pluggins -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+        <script type="text/javascript" src="Script/CheckSystem.js">                     </script>
+        <script type="text/javascript" src="Script/GraficalBasics.js">                  </script>
+        <script type="text/javascript" src="Script/Timemesurement.js">                  </script>
+        <script type="text/javascript" src="Script/Clockgrafichs.js">                   </script>
+		
+		<!-- Css with adjustments for devices and screen resolutions -->
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="Css/Style.css">
+		
+		<link rel="stylesheet" media="screen and (orientation:landscape) and (max-width: 1000px)" type="text/css" href="Css/StyleLowRes.css">
+        <link rel="stylesheet" media="screen and (orientation:portrait)" type="text/css" href="Css/Style-Mobile.css">
+		<link rel="stylesheet" media="screen and (orientation:portrait) and (max-width: 600px)" type="text/css" href="Css/Style-Mobile.css">
+    </head>
+
+    <body>
+		<!-- Canvas in a holding div in main page div everything adjusting acording to screen resolution and oritation -->
+        <div id="shityshit">
+            <div id="ClockCanvasHolder">
+                <h3 id="TextKlocka">Clock  <img id="textimg" src="Bilder/Capture64x64.png" alt="Bilder/Error/Error404.png"></h3>
+                <canvas id="ClockCanvas" width="450px" height="500px"></canvas>
+            </div>
+        </div>
+    </body>
+	
+    <footer id="footer">
+        <p>Dev: Joachim Johnson							  </p>
+        <img id="textimg2" src="Bilder/Capture.PNG" alt="Bilder/Error/Error404.png">
+    </footer>
+</html>

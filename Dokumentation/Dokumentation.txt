@@ -1,0 +1,82 @@
+This project is for clock aplication for webbsides and mobile application. Delopment is in english and application
+target language is swedish with possibility for an english port in the future.
+
+Delopers: Joachim Johnson
+
+Main platform: Mobile and webb
+
+Requrements on the platform:
+Uses the 24-hourclock
+Supports morden webb/html5/javascript.
+
+Pland features:
+A simple 10-based clock instead of 12/24 clocks system.
+Adaptiv simple design depending on platform device and screen.
+
+Alpha
+<!---------------------------------------------------------------------------------------------------------------->
+0.01
+..................................................
+- Project startup
+- First design is put into place
+- Html5 and css struckture put into place
+- Dokumentation started
+- Early build and test images and icons loaded in
+- Basic javascript file created
+..................................................
+
+0.02
+..................................................
+- Minor updates
+- Updates with img files
+- Moore documentation
+- Javascript scripting added
+- Checks if you use 24/12-hour clock 24 work only for now.
+- Added working 24 to 10 hour calculation
+- canvas set to 350x350 resolution and streching into place
+..................................................
+
+0.03
+..................................................
+- Minor updates
+- Set 450x500 defult base resolution
+- Changing resolution from javascript
+- Text interface is now adaptip to resolution change
+- Change the language all to english
+- Footer updated
+- First error messenges made
+- Autoupdate Time and Text
+..................................................
+
+0.04
+..................................................
+- Minor updates
+- Herobrine removed
+- Baking Cake
+- Coding Improving
+- Chaging filenames for android devlopment
+- Grafical Updating/Resolution Adjustments
+..................................................
+
+0.05
+..................................................
+- Codechange
+- Grafical change
+- Online Jqerry implemented
+..................................................
+
+0.06
+..................................................
+- 
+..................................................
+
+Beta
+<!---------------------------------------------------------------------------------------------------------------->
+
+
+
+
+1.0 Realese and patch updates
+<!---------------------------------------------------------------------------------------------------------------->
+
+Have a nice day ;)
