@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    //var c = document.getElementById("ClockCanvas");
-    //var ctx = c.getContext("2d");
     window.c = document.getElementById("ClockCanvas");
     window.ctx = c.getContext("2d");
 
@@ -14,12 +12,12 @@ $(document).ready(function(){
         }
     
     // window size
-	var WindowWidth = window.innerWidth;
-	var WindowsHeigt = window.innerHeight;
-	var screenWidth = screen.width;
-    var screenHeigt = screen.height;
+	var WindowWidth     = getWindowWidth();
+	var WindowsHeigt    = getWindowHeight();
+	var screenWidth     = getScreenWidth();
+    var screenHeigt     = getScreenHeight();
 
-    //set canvas inner resolution.
+    // set canvas inner resolution. This 
     switch(HighRes,isWideScreen) {
         case HighRes == true, isWideScreen == true:
             c.height = 900;
@@ -42,23 +40,50 @@ $(document).ready(function(){
             c.width  = 450;
     }
 
-    //HighRes checker
-	if(screenWidth > 1670){
+    // HighRes checker, cheking if the screen is an regular 1080p screen. width of an 1080p ekvevelent 4:3 is 1600px.
+	if(screenWidth > 1590){
 			HighRes  = true;
-			c.height = 900;
-			c.width  = 1000;
     }
 	else{
 			HighRes  = false;
-			c.height = 450;
-			c.width  = 500;
     }       
 }); 
 
+/*
+    Cleaning the canvas after each update.
+*/
 function canvasCleaner(){
     var blocks = [];
     ctx.clearRect(0, 0, c.width, c.height);
     for(var i in blocks){
         blocks[i].draw(ctx);
     }
+}
+
+/*
+    Returning the height of the aplication window.
+*/
+function getWindowHeight(){
+    return window.innerHeight;
+}
+
+/*
+    Returning the width of the aplication window.
+*/
+function getWindowWidth(){
+    return window.innerWidth;
+}
+
+/*
+    Returning the height of the Screen.
+*/
+function getScreenHeight(){
+    return screen.height;
+}
+
+/*
+    Returning the width of the Screen.
+*/
+function getScreenWidth(){
+    return screen.width;
 }

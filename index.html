@@ -5,36 +5,44 @@
     <head>
         <title>Clock</title>
 		<!-- Tab icon -->
-		<link rel="icon" href="Bilder/Capture.PNG" type="image/x-icon">
+		<link rel="icon" href="Images/Capture.PNG" type="image/x-icon">
 		
-        <!-- Scripts and pluggins -->
+        <!-- External scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="Script/Calculate10HoureBase.js">            </script>
+        <script type="text/javascript" src="Script/CanvaspositionPoints.js">            </script>
+        <script type="text/javascript" src="Script/ClockAnimation.js">                  </script>
         <script type="text/javascript" src="Script/CheckSystem.js">                     </script>
-        <script type="text/javascript" src="Script/GraficalBasics.js">                  </script>
+        <script type="text/javascript" src="Script/GetSetTime.js">                      </script>
+        <script type="text/javascript" src="Script/GraphicalBasics.js">                 </script>
+        <script type="text/javascript" src="Script/TextPrintout.js">                    </script>
+        <script type="text/javascript" src="Script/Error_Validation_Check.js">          </script>
         <script type="text/javascript" src="Script/Timemesurement.js">                  </script>
-        <script type="text/javascript" src="Script/Clockgrafichs.js">                   </script>
-		
+        
 		<!-- Css with adjustments for devices and screen resolutions -->
 		<!-- Default -->
 		<link rel="stylesheet" type="text/css" href="Css/Style.css">
-		
-		<link rel="stylesheet" media="screen and (orientation:landscape) and (max-width: 1000px)" type="text/css" href="Css/StyleLowRes.css">
+        
+        <!-- Low res desktop version -->
+        <link rel="stylesheet" media="screen and (orientation:landscape) and (max-width: 1000px)" type="text/css" href="Css/StyleLowRes.css">
+
+        <!-- Mobile version -->
         <link rel="stylesheet" media="screen and (orientation:portrait)" type="text/css" href="Css/Style-Mobile.css">
-		<link rel="stylesheet" media="screen and (orientation:portrait) and (max-width: 600px)" type="text/css" href="Css/Style-Mobile.css">
     </head>
 
     <body>
 		<!-- Canvas in a holding div in main page div everything adjusting acording to screen resolution and oritation -->
         <div id="shityshit">
             <div id="ClockCanvasHolder">
-                <h3 id="TextKlocka">Clock  <img id="textimg" src="Bilder/Capture64x64.png" alt="Bilder/Error/Error404.png"></h3>
+                <h3 id="TextKlocka">Clock  <img id="textimg" src="Images/Capture64x64.png" alt="Images/Error/Error404.png"></h3>
                 <canvas id="ClockCanvas" width="450px" height="500px"></canvas>
             </div>
         </div>
     </body>
 	
     <footer id="footer">
-        <p>Dev: Joachim Johnson							  </p>
-        <img id="textimg2" src="Bilder/Capture.PNG" alt="Bilder/Error/Error404.png">
+        <p>Dev: Joachim Johnson</p>
     </footer>
 </html>

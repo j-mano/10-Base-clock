@@ -12,32 +12,29 @@ Supports morden webb/html5/javascript.
 Pland features:
 A simple 10-based clock instead of 12/24 clocks system.
 Adaptiv simple design depending on platform device and screen.
+Planed to take the current time from the operating system / current device it running on and display the current time in 10 based clock.
+
+10 base clock. 10 houres per day. 100 minuts per houre. 100 secounds per minut.
 
 Alpha
 <!---------------------------------------------------------------------------------------------------------------->
 0.01
-..................................................
+....................................................................................................
 - Project startup
 - First design is put into place
 - Html5 and css struckture put into place
 - Dokumentation started
 - Early build and test images and icons loaded in
 - Basic javascript file created
-..................................................
-
-0.02
-..................................................
-- Minor updates
 - Updates with img files
-- Moore documentation
 - Javascript scripting added
 - Checks if you use 24/12-hour clock 24 work only for now.
 - Added working 24 to 10 hour calculation
 - canvas set to 350x350 resolution and streching into place
-..................................................
+....................................................................................................
 
-0.03
-..................................................
+0.02
+....................................................................................................
 - Minor updates
 - Set 450x500 defult base resolution
 - Changing resolution from javascript
@@ -46,29 +43,37 @@ Alpha
 - Footer updated
 - First error messenges made
 - Autoupdate Time and Text
-..................................................
-
-0.04
-..................................................
-- Minor updates
 - Herobrine removed
-- Baking Cake
-- Coding Improving
 - Chaging filenames for android devlopment
 - Grafical Updating/Resolution Adjustments
-..................................................
+....................................................................................................
 
-0.05
-..................................................
-- Codechange
+0.03
+....................................................................................................
+- Pickt upp again after years of inactivity
+- Codechange struckture
 - Grafical change
 - Online Jqerry implemented
-..................................................
+- Uploaded to github
+....................................................................................................
 
-0.06
-..................................................
-- 
-..................................................
+0.04
+....................................................................................................
+- Updating to strukture to be moore readable for othe devlopers
+- Validation and errorcontrol changed to its own file
+- Minor tweaks here and there
+- Documentation updated
+- Moore descriptiv documentation in code explaning what everything does.
+- Decided to use xml for language input(Just files are added not implemented)
+....................................................................................................
+
+0.05
+....................................................................................................
+-
+-
+-
+-
+....................................................................................................
 
 Beta
 <!---------------------------------------------------------------------------------------------------------------->
@@ -79,4 +84,17 @@ Beta
 1.0 Realese and patch updates
 <!---------------------------------------------------------------------------------------------------------------->
 
-Have a nice day ;)
+1.0
+....................................................................................................
+-
+-
+-
+-
+....................................................................................................
+
+potential patch (Not planed but you never know for sure whats happens)
+....................................................................................................
+
+....................................................................................................
+
+Have a nice day
