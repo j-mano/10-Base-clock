@@ -27,7 +27,7 @@ function getRegularMinute(){
 }
 
 function get10baseClockTime(){
-    return get10hourebase();
+    return getCalc10HoureBase();
 }
 
 function getDate10baseHoure(){
@@ -50,38 +50,8 @@ function getDate10baseMinute(){
     this.dec    = Number("."+parts[1]).toFixed(2).replace('0','');
 
     var Minutes = Number("."+parts[1]).toFixed(2).replace('0','');
+
+    Minutes = Minutes * 100;
     
     return Minutes;
-}
-
-/*
-    updating the aplications internalclock
-*/
-function setInternalSystemclock(){
-
-}
-
-function getis24HoureTime(){
-
-    return false;
-}
-
-function getis12HoureTime(){
-    
-    return false;
-}
-
-function timeupdater(){
-    /*
-        Getting systemtime from operatingsystem.
-    */
-
-    date1 = new Date();
-    Hours = date1.getHours();
-    Minutes = date1.getMinutes();
-}
-
-function updateAplicationTime(){
-    timeupdater();
-    setInternalSystemclock();
 }

@@ -13,10 +13,6 @@
     height: 20px;
 }
 
-#textimg2{
-    visibility: hidden;
-}
-
 #TextKlocka{
 	color: yellow;
 }
@@ -29,7 +25,7 @@
     border: solid 5px black;
 }
 
-#shityshit{
+#CanvasWraper{
     width: 105%;
     height: 500px;
     text-align: center;

@@ -9,6 +9,8 @@ function printBottomText(printtext){
 }
 
 function writedate(){
+    var date1 = getRegularClockTime();
+
     if(ishorisontal == true){
         ctx.font = "1.5em Arial";
     }

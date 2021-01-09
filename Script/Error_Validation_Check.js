@@ -3,43 +3,30 @@ window.errorbool = 0;
 window.ErrorCode = 0;
 
 function validateTimne(){
-    if (!errorCheckTimeformat()){
+    if (!errorCheckTimeformat())
         return false;
-    }
     
-    if (!continous10Hourebasecheck()){
+    if (!continous10Hourebasecheck())
+        return false;
+
+    return true;
+}
+
+async function errorCheckTimeformat(){
+    // Error code can't read local clock.
+    if(getRegularClockTime() != 24 && getRegularClockTime() != 12){
+        errorbool = 1;
+        ErrorCode = "Don't know if to use 12 or 24 hour clock";
         return false;
     }
 
     return true;
 }
 
-function errorCheckTimeformat(){
-    // Error code can't read local clock.
-    if(clocktranslation != 24 && clocktranslation != 12){
-        errorbool = 1;
-        ErrorCode = "Don't know if to use 12 or 24 hour clock";
-    }
-}
-
-function continous10Hourebasecheck(){
+async function continous10Hourebasecheck(){
     var date = get10baseClockTime();
 
     is10HoureDate(date);
-}
-
-function is12HoureDate(Date1){
-    if (Date1.toString().match(/am|pm/i))
-		return true;
-
-    return false;
-}
-
-function is24HoureDate(Date1){
-    if (Date1.toString().match(/am|pm/i))
-		return false;
-
-    return true;
 }
 
 /*
@@ -67,4 +54,18 @@ function base10MinuteRange(dateMinute){
         return true;
 
     return false;
+}
+
+function is12HoureDate(Date1){
+    if (Date1.toString().match(/am|pm/i))
+		return true;
+
+    return false;
+}
+
+function is24HoureDate(Date1){
+    if (Date1.toString().match(/am|pm/i))
+		return false;
+
+    return true;
 }
